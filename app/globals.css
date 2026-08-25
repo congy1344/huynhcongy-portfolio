@@ -26,7 +26,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-snap-type: y mandatory; scroll-padding-top: 84px; }
+html { scroll-behavior: smooth; scroll-snap-type: y proximity; scroll-padding-top: 84px; }
 body {
   margin: 0;
   background: var(--bg);
@@ -152,7 +152,7 @@ button, a, summary { -webkit-tap-highlight-color: transparent; }
 .not-found { min-height: calc(100dvh - 186px); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .not-found h1 { margin: 0; font-size: clamp(48px, 8vw, 96px); letter-spacing: -.06em; line-height: 1; }
 .not-found > p:not(.eyebrow) { color: var(--muted); font-size: 18px; }
-.hero, .work > .section-heading, .project-card, .about, .skills, .contact { scroll-snap-align: start; scroll-snap-stop: always; scroll-margin-top: 84px; }
+.hero, .work > .section-heading, .project-card, .about, .skills, .contact { scroll-snap-align: start; scroll-snap-stop: normal; scroll-margin-top: 84px; }
 
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }
